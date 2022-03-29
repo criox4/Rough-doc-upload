@@ -65,7 +65,13 @@ export default function App() {
 					onPress={() => setScanned(false)}
 					color='tomato'
 				/>
-            )}
+            )
+			}
+			<Button
+				// style={{ margin: 10 }}
+				title='Proceed to Document Upload'
+				onPress={() => this.props.navigation.navigate('upload')}  
+			/>
 		</View>
 	)
 }
